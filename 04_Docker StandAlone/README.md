@@ -47,9 +47,9 @@ docker run --rm -it -p 4445:4444 -p 5901:5900 -p 7901:7900 --shm-size 2g selenia
 
 
 ## Update your selenium tests to point to the respective urls:
-**DriverFactory**
+**DriverFactory.java**
 
-```
+```java
 		if (browser.equalsIgnoreCase("firefox")) {
 			Loggerload.info("Testing on firefox");
 			WebDriverManager.firefoxdriver().setup();
@@ -66,6 +66,27 @@ docker run --rm -it -p 4445:4444 -p 5901:5900 -p 7901:7900 --shm-size 2g selenia
 			WebDriverManager.chromedriver().setup();
 			driver = new RemoteWebDriver(new URL("http://localhost:4444/"), capability);
 
+```
+**TestNG.xml**
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  thread-count="3">
+	<test name="Chrome Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="runner.TestRunner" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Firefox Test">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="runner.TestRunner" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
 ```
  So, Chrome container will run test on Chrome browser, Firefox container will run test on Firefox
 
