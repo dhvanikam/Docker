@@ -99,4 +99,11 @@ Now lets run the project
 https://github.com/dhvanikam/Docker/assets/73573915/fa5f3012-18c6-4a94-a280-51502d12738e
 
 
+Chrome: While test is running
+<img width="1884" alt="Chrome" src="https://github.com/dhvanikam/Docker/assets/73573915/45cc093e-ea13-4410-b20f-7871e87a3d5b">
+
+Firefox :While test is running
+<img width="1884" alt="firefox" src="https://github.com/dhvanikam/Docker/assets/73573915/b8ae91e8-6a62-46c5-b87b-e7749cb7f5d8">
+
+
 
