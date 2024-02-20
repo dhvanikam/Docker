@@ -24,7 +24,11 @@ For Windows and macOS
 
 OR Go to https://docs.docker.com/compose/install/
 
-## Starting 
+## Using Docker Compose is a three-step process:
+
+* Define the services that make up your app in compose.yaml so they can be run together in an isolated environment.
+* Lastly, run docker compose up and Compose will start and run your entire app.
+* After tests are done, To stop the Grid and cleanup the created containers, run docker-compose down.
 
 Version 2
 docker-compose-v2.yml : https://github.com/SeleniumHQ/docker-selenium/blob/trunk/docker-compose-v2.yml
@@ -33,24 +37,14 @@ Version 3
 docker-compose-v3.yml : https://github.com/SeleniumHQ/docker-selenium/blob/trunk/docker-compose-v3.yml
 
 For my system i have to use specific hub and node 
-
-# To execute this docker-compose yml file use `docker-compose -f docker-compose-v3.yml up`
+```yml
+# To execute this docker-compose yml file use `docker-compose -f docker-compose-v3.yml up
 # Add the `-d` flag at the end for detached execution
-# To stop the execution, hit Ctrl+C, and then `docker-compose -f docker-compose-v3.yml down`
+# To stop the execution, hit Ctrl+C, and then `docker-compose -f docker-compose-v3.yml down
 version: "3"
 services:
   chrome:
-    image: selenium/node-chrome:4.18.0-20240220
-    shm_size: 2gb
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-
-  edge:
-    image: selenium/node-edge:4.18.0-20240220
+    image: seleniarm/node-chromium
     shm_size: 2gb
     depends_on:
       - selenium-hub
@@ -76,3 +70,22 @@ services:
       - "4442:4442"
       - "4443:4443"
       - "4444:4444"
+```
+
+**version 3**: It is the latest version of the docker-compose files.
+
+**services(containers)**: This contains the list of the images and their configurations.
+
+**image**: It defines which image will be used to spin up container.
+
+**shm_size**: Use the host's shared memory.
+
+**ports**: Published ports in exposed port : container port format.
+
+**container_name**: Name of our containers.
+
+**depends_on**: This defines the required dependency before spinning up the container. In our docker-compose.yml file, containers Chrome and Firefox are dependent upon container hub to spin up.
+
+**SE_EVENT_BUS_HOST**: Hub host.
+
+**SE_EVENT_BUS_PUBLISH_PORT** and **SE_EVENT_BUS_SUBCRIBE_PORT**:  Ports 4442 and 4443 are exposed by default for Event Bus ports to help them communicate with Hub.
