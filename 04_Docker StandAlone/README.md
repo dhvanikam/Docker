@@ -106,4 +106,6 @@ Firefox :While test is running
 <img width="1884" alt="firefox" src="https://github.com/dhvanikam/Docker/assets/73573915/b8ae91e8-6a62-46c5-b87b-e7749cb7f5d8">
 
 
+So that was it for stand alone mode. The major downside of performing tests in a standalone container is low scalability and starting containers separately. 
 
+We can overcome this issue with Docker Compose. 
