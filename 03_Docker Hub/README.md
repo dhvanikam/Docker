@@ -22,26 +22,90 @@ Here are some key features and aspects of Docker Hub:
 6. **Docker Hub CLI:**
    - Docker Hub also provides a command-line interface (CLI) that allows you to interact with Docker Hub from your local machine using Docker commands.
 
-Here are a few Docker Hub CLI commands:
+To access Docker through the command line interface (CLI), you need to use the `docker` command followed by various subcommands to perform different actions such as managing containers, images, volumes, networks, and more. Here are some commonly used Docker commands:
 
-   - **Login to Docker Hub:**
-     ```bash
-     docker login
-     ```
+1. **Docker version:**
+   ```bash
+   docker version
+   ```
+   This command shows the Docker client and server version information.
 
-   - **Push an Image to Docker Hub:**
-     ```bash
-     docker push <image_name>
-     ```
+2. **Docker info:**
+   ```bash
+   docker info
+   ```
+   This command displays system-wide information about Docker and its components.
 
-   - **Pull an Image from Docker Hub:**
-     ```bash
-     docker pull <image_name>
-     ```
+3. **Pull an image from Docker Hub:**
+   ```bash
+   docker pull <image_name>
+   ```
+   This command downloads a Docker image from Docker Hub.
 
-   - **Search for Images on Docker Hub:**
-     ```bash
-     docker search <search_term>
-     ```
+4. **List Docker images:**
+   ```bash
+   docker images
+   ```
+   This command lists all Docker images stored locally on your system.
 
-By using Docker Hub, you can easily share your Docker images, discover existing images, and collaborate with others in the Docker ecosystem.
+5. **Run a container:**
+   ```bash
+   docker run <image_name>
+   ```
+   This command creates and starts a new container from a specified image.
+
+6. **List running containers:**
+   ```bash
+   docker ps
+   ```
+   This command lists all currently running Docker containers.
+
+7. **List all containers (including stopped ones):**
+   ```bash
+   docker ps -a
+   ```
+   This command lists all Docker containers, including those that are stopped.
+
+8. **Stop a container:**
+   ```bash
+   docker stop <container_id>
+   ```
+   This command stops a running container.
+
+9. **Start a stopped container:**
+   ```bash
+   docker start <container_id>
+   ```
+   This command starts a stopped container.
+
+10. **Remove a container:**
+    ```bash
+    docker rm <container_id>
+    ```
+    This command removes a stopped container.
+
+11. **Remove an image:**
+    ```bash
+    docker rmi <image_id>
+    ```
+    This command removes a Docker image from your local repository.
+
+12. **Inspect a container:**
+    ```bash
+    docker inspect <container_id>
+    ```
+    This command provides detailed information about a container.
+
+13. **Execute a command in a running container:**
+    ```bash
+    docker exec -it <container_id> <command>
+    ```
+    This command executes a command inside a running container.
+
+14. **View logs of a container:**
+    ```bash
+    docker logs <container_id>
+    ```
+    This command displays the logs of a specific container.
+
+These are some of the most commonly used Docker commands. We can use them to manage Docker containers, images, volumes, networks, and other resources on your system.
