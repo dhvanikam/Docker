@@ -12,3 +12,6 @@ You can download and install Docker on multiple platforms.
 ## https://docs.docker.com/desktop/install/mac-install/
 
 ## https://docs.docker.com/desktop/install/windows-install/ 
+
+
+After installation You will have **Docker Desktop** installed on your System.
