@@ -2,7 +2,7 @@
 
 Find sample Project on : https://github.com/dhvanikam/DockerSampleProject 
 
-Step 1: Point RemoteWebDriver in your test to http://localhost:4444 
+**Step 1**: Point RemoteWebDriver in your test to http://localhost:4444 
 
 Update your selenium tests to point to the respective urls:
 **DriverFactory.java**
@@ -47,7 +47,7 @@ Update your selenium tests to point to the respective urls:
 </suite> <!-- Suite -->
 ```
 
-Step 2: Go to your project directory where "docker-compose-v2.yml" is residing
+**Step 2**: Go to your project directory where "docker-compose-v2.yml" is residing
 
 Run the docker compose file
 
