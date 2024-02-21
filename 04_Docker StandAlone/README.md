@@ -91,8 +91,8 @@ docker run --rm -it -p 4445:4444 -p 5901:5900 -p 7901:7900 --shm-size 2g selenia
  So, Chrome container will run test on Chrome browser, Firefox container will run test on Firefox
 
 Navigate to : 
-For chrome noVNC : http://localhost:7900/?autoconnect=1&resize=scale&password=secret
-For firefox noVNC : http://localhost:7901/?autoconnect=1&resize=scale&password=secret
+* For chrome noVNC : http://localhost:7900/?autoconnect=1&resize=scale&password=secret
+* For firefox noVNC : http://localhost:7901/?autoconnect=1&resize=scale&password=secret
 
 Now lets run the project
 
