@@ -47,7 +47,12 @@ Update your selenium tests to point to the respective urls:
 </suite> <!-- Suite -->
 ```
 
-**Step 2**: Go to your project directory where "docker-compose-v2.yml" is residing
+**Step 2**: Make sure Docker Engine is running
+
+**Step 3**: Go to your project directory where "docker-compose-v2.yml" is residing
+
+<img width="561" alt="Step8" src="https://github.com/dhvanikam/Docker/assets/73573915/5ce1b2f4-5a4f-45a6-9c6f-2574faa1302f">
+
 
 Run the docker compose file
 
@@ -60,3 +65,20 @@ Add the -d flag at the end for detached execution
 ```
 docker-compose -f docker-compose-v2.yml up -d
 ```
+<img width="873" alt="Step9" src="https://github.com/dhvanikam/Docker/assets/73573915/6e6d8820-ed9c-4714-b39b-c897c20eda02">
+
+
+**Step 4**: Check the Docker Desktop
+
+<img width="1747" alt="Step10" src="https://github.com/dhvanikam/Docker/assets/73573915/edb4665a-2f3b-4853-a5c0-a2de0175a0f5">
+
+**Step 5**: http://localhost:4444 
+
+<img width="1480" alt="Step11" src="https://github.com/dhvanikam/Docker/assets/73573915/f585e56a-be66-49ff-a9c9-30b9e59c683e">
+
+**Step 6**: Now Run the test
+
+
+
+
+
