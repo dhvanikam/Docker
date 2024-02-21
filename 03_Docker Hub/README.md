@@ -3,9 +3,9 @@
 Docker Hub is a cloud-based registry service provided by Docker that allows you to store and share Docker container images. It serves as a central repository for Docker images, making it easy for developers to share and distribute their containerized applications. Docker Hub is widely used in the Docker community, and it provides a convenient platform for collaboration and distribution of containerized applications.
 
 You can create a free Docker account with your email address or by signing up with your Google or GitHub account. Once you've created your account with a unique Docker ID, you can access all Docker products, including Docker Hub. 
-```
+
 https://docs.docker.com/docker-id/
-```
+
 
 Here are some key features and aspects of Docker Hub:
 
