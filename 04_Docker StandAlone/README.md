@@ -123,8 +123,8 @@ Firefox :While test is running
 
 So that was it for stand alone mode. 
 
-**The major downside of performing tests in a below execution modes, is low scalability and starting containers separately**. 
-* Standalone container
+**The major downside of performing tests in a below execution modes, is and starting containers separately**. 
+* Standalone container - low scalability 
 * Hub and Nodes
   * Docker networking 
   * Using different machines/VMs 
