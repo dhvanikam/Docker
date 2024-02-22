@@ -1,5 +1,7 @@
 # Selenium Grid with Docker - Standalone mode on macOS
 
+
+
 As I am using macOS, I am following https://github.com/seleniumhq-community/docker-seleniarm specific to my system which is ARM.
 
 For other System Make sure to visit : https://github.com/SeleniumHQ/docker-selenium 
