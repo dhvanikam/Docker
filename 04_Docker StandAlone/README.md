@@ -1,6 +1,9 @@
 # Selenium Grid with Docker - Standalone mode on macOS
 
 
+![docker drawio](https://github.com/dhvanikam/Docker/assets/73573915/9da979aa-cf73-4024-a289-f90b25c3c2a3)
+
+
 
 As I am using macOS, I am following https://github.com/seleniumhq-community/docker-seleniarm specific to my system which is ARM.
 
