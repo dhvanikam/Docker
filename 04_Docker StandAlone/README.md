@@ -1,7 +1,8 @@
 # Selenium Grid with Docker - Standalone mode on macOS
 
 
-![docker drawio](https://github.com/dhvanikam/Docker/assets/73573915/9da979aa-cf73-4024-a289-f90b25c3c2a3)
+![docker drawio](https://github.com/dhvanikam/Docker/assets/73573915/7ab78eb0-ff18-4f2b-998d-d509051d1d8a)
+
 
 
 
