@@ -58,12 +58,12 @@ Run the docker compose file
 
 To execute this docker-compose yml file use
 ```
-docker-compose -f docker-compose-v2.yml up
+docker-compose -f docker-compose-v3.yml up
 ```
 Add the -d flag at the end for detached execution
 
 ```
-docker-compose -f docker-compose-v2.yml up -d
+docker-compose -f docker-compose-v3.yml up -d
 ```
 <img width="873" alt="Step9" src="https://github.com/dhvanikam/Docker/assets/73573915/6e6d8820-ed9c-4714-b39b-c897c20eda02">
 
