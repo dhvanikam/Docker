@@ -1,4 +1,14 @@
-# Selenium Grid with Docker - Standalone mode on macOS
+# Execution modes
+
+* **Standalone**
+* **Hub and Nodes**
+  * Docker networking : https://github.com/SeleniumHQ/docker-selenium?tab=readme-ov-file#docker-networking
+  * Using different machines/VMs : https://github.com/SeleniumHQ/docker-selenium?tab=readme-ov-file#using-different-machinesvms
+  * Docker Compose : https://github.com/SeleniumHQ/docker-selenium?tab=readme-ov-file#docker-compose
+
+We are going to focus mainly on Docker-Compose, But before that lets see how to run in Standalone mode.
+
+## Docker - Standalone mode on macOS
 
 
 ![docker drawio](https://github.com/dhvanikam/Docker/assets/73573915/7ab78eb0-ff18-4f2b-998d-d509051d1d8a)
@@ -112,6 +122,13 @@ Firefox :While test is running
 <img width="1884" alt="firefox" src="https://github.com/dhvanikam/Docker/assets/73573915/b8ae91e8-6a62-46c5-b87b-e7749cb7f5d8">
 
 
-So that was it for stand alone mode. The major downside of performing tests in a standalone container is low scalability and starting containers separately. 
+So that was it for stand alone mode. 
+
+**The major downside of performing tests in a below execution modes, is low scalability and starting containers separately**. 
+* Standalone container
+* Hub and Nodes
+  * Docker networking 
+  * Using different machines/VMs 
+ 
 
 We can overcome this issue with Docker Compose. 
