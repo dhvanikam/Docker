@@ -49,9 +49,10 @@ Update your selenium tests to point to the respective urls:
 
 **Step 2**: Make sure Docker Engine is running
 
-**Step 3**: Go to your project directory where "docker-compose-v2.yml" is residing
+**Step 3**: Go to your project directory where "docker-compose-v3.yml" is residing
 
-<img width="561" alt="Step8" src="https://github.com/dhvanikam/Docker/assets/73573915/08afc2c3-fbfc-4a64-8f2e-2a0b89f5f53f">
+<img width="477" alt="Step" src="https://github.com/dhvanikam/Docker/assets/73573915/066f5f9d-55f1-474b-802f-6f0366da8439">
+
 
 
 Run the docker compose file
