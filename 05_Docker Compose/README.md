@@ -1,8 +1,6 @@
 # Docker Compose
 
-
-![DockerCompose drawio](https://github.com/dhvanikam/Docker/assets/73573915/57cae541-9b07-427b-99b8-bdf44b8ea7b3)
-
+![DockerCompose1 drawio](https://github.com/dhvanikam/Docker/assets/73573915/8e381100-e95d-4771-b2fe-c4caab8598ea)
 
 Docker Compose is a tool for defining and running multi-container applications. It is the key to unlocking a streamlined and efficient development and deployment experience.
 
