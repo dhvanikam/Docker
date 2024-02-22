@@ -11,8 +11,7 @@ We are going to focus mainly on Docker-Compose, But before that lets see how to 
 ## Docker - Standalone mode on macOS
 
 
-![docker drawio](https://github.com/dhvanikam/Docker/assets/73573915/7ab78eb0-ff18-4f2b-998d-d509051d1d8a)
-
+![docker2 drawio](https://github.com/dhvanikam/Docker/assets/73573915/95bf8bfb-ea60-4aa0-a88d-a49f4337c7d5)
 
 
 
