@@ -19,7 +19,7 @@ We are going to focus mainly on Docker-Compose, But before that lets see how to 
 ### Find the correct images and docker run command from Docker Hub.
 Lets check that image that we want to start container for is availble in Docker hub, Go to : https://hub.docker.com and Search "Selenium"
 
-**Windows and Linux**:
+#### For Windows and Linux:
 
 Here we are looking for 
 * Chrome image : selenium/standalone-chrome (https://hub.docker.com/r/selenium/standalone-chrome) 
@@ -30,14 +30,15 @@ Here we are looking for
 Make sure to filter images according to your system requirement.
 
 Now, Click on image one by one and copy the commands,
-<img width="1175" alt="chromecommand" src="https://github.com/dhvanikam/Docker/assets/73573915/708bd1c5-bd41-4b1d-ace8-ce535af73922">
+
+<img width="1175" alt="chromecommand" src="https://github.com/dhvanikam/Docker/assets/73573915/aeda2cd0-f4bb-424b-9096-0f1a50cbeb01">
 
 <img width="1175" alt="firefoxcommand" src="https://github.com/dhvanikam/Docker/assets/73573915/f9406610-0f50-4795-9492-d40f089bad94">
 
 
 More details on : https://github.com/SeleniumHQ/docker-selenium 
 
-**macOS - ARM, ARM64**:
+#### For macOS - ARM, ARM64:
 As I am using macOS - ARM64 which has spefic system requirment for that visit : https://hub.docker.com/u/seleniarm
 
 Here we are looking for 
@@ -58,11 +59,15 @@ Now we know the images Lets get Started,
 
 Start Chrome standalone:
 
+* **For Windows and Linux**:
+```
+docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-chrome:latest
+```
+
 * **macOS - ARM64 System**
 ```
 docker run --rm -it -p 4444:4444 -p 5900:5900 -p 7900:7900 --shm-size 2g seleniarm/standalone-chromium:latest
 ```
-
 
 * Point your WebDriver tests to http://localhost:4444
 * Use your traditional VNC client via port 5900, and noVNC in the browser via port 7900.
@@ -70,6 +75,11 @@ docker run --rm -it -p 4444:4444 -p 5900:5900 -p 7900:7900 --shm-size 2g selenia
   
 Start Firefox standalone:
 
+* **For Windows and Linux**:
+```
+docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-firefox:latest
+```
+* **macOS - ARM64 System**
 ```
 docker run --rm -it -p 4445:4444 -p 5901:5900 -p 7901:7900 --shm-size 2g seleniarm/standalone-firefox:latest
 
