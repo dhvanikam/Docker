@@ -52,71 +52,108 @@ To access Docker through the command line interface (CLI), you need to use the `
    docker pull selenium/standalone-chrome
    ```
 
-5. **List Docker images:**
+4. **List Docker images:**
    ```bash
    docker images
    ```
    This command lists all Docker images stored locally on your system.
+   Example :
+   <img width="768" alt="dockerimages" src="https://github.com/dhvanikam/Docker/assets/73573915/e0af2bf2-1d23-4750-9f2d-5470e19d5efb">
 
-6. **Run a container:**
+
+5. **Run a container:**
    ```bash
    docker run <image_name>
    ```
     
    This command creates and starts a new container from a specified image.We will see more in details in next topic.
+   Example :
+    ```bash
+   docker run -d -p 4444:4444 selenium/standalone-chrome
+   ```
+   <img width="949" alt="dockerrun" src="https://github.com/dhvanikam/Docker/assets/73573915/07569b97-7b42-4213-9d0c-7e8b2b63f1e4">
 
-8. **List running containers:**
+   
+
+6. **List running containers:**
    ```bash
    docker ps
    ```
    This command lists all currently running Docker containers.
+   Example:
+   <img width="1235" alt="dockerps" src="https://github.com/dhvanikam/Docker/assets/73573915/fa94c1de-5af5-482d-88cf-f8e16bd886b3">
 
-9. **List all containers (including stopped ones):**
+   Note the Container ID
+
+7. **List all containers (including stopped ones):**
    ```bash
    docker ps -a
    ```
    This command lists all Docker containers, including those that are stopped.
 
-10. **Stop a container:**
-   ```bash
-   docker stop <container_id>
-   ```
-   This command stops a running container.
+   Example:
+   <img width="1348" alt="dockerps-a" src="https://github.com/dhvanikam/Docker/assets/73573915/99a2d53a-4d02-41dc-bb32-026eae627354">
 
-11. **Start a stopped container:**
-   ```bash
-   docker start <container_id>
-   ```
-   This command starts a stopped container.
-
-11. **Remove a container:**
+8. **Inspect a container:**
     ```bash
-    docker rm <container_id>
+    docker inspect <container_id noted previously>
+    ```
+    This command provides detailed information about a container.
+    Example:
+    <img width="763" alt="dockerinspect" src="https://github.com/dhvanikam/Docker/assets/73573915/b47aa008-8e6a-40fb-9e6c-7e597e366f53">
+
+
+9. **Execute a command in a running container:**
+    ```bash
+    docker exec -it <container_id noted previously> <command>
+    ```
+    This command executes a command inside a running container.
+    Example:
+    <img width="1354" alt="dockerexcecmnd" src="https://github.com/dhvanikam/Docker/assets/73573915/7bd82603-1ac9-4d23-99f9-51d14983f0ee">
+
+
+10. **View logs of a container:**
+    ```bash
+    docker logs <container_id noted previously>
+    ```
+    This command displays the logs of a specific container.
+    Example:
+    <img width="848" alt="dockerlogs" src="https://github.com/dhvanikam/Docker/assets/73573915/4ccad046-0160-4081-b551-2a3680b72c81">
+
+11. **Stop a container:**
+    ```bash
+    docker stop <container_id noted previously>
+    ```
+    This command stops a running container.
+    Example:
+    <img width="758" alt="Dockerstop" src="https://github.com/dhvanikam/Docker/assets/73573915/ae7e64bd-c4c5-42ed-93f5-c908c0cfd69d">
+
+
+12. **Start a stopped container:**
+    ```bash
+    docker start <container_id noted previously>
+    ```
+    This command starts a stopped container.
+    Example:
+    <img width="1243" alt="dosckerstart" src="https://github.com/dhvanikam/Docker/assets/73573915/9553cfc4-b28e-4e18-a79f-84df6973040c">
+
+
+13. **Remove a container:**
+    ```bash
+    docker rm <container_id noted previously>
     ```
     This command removes a stopped container.
 
-12. **Remove an image:**
+    Example:
+    <img width="1243" alt="Dockerremove" src="https://github.com/dhvanikam/Docker/assets/73573915/f5e50f43-19c7-478b-9bd6-31b817365f75">
+
+
+14. **Remove an image:**
     ```bash
-    docker rmi <image_id>
+    docker rmi <image_id noted from "docker images" command>
     ```
     This command removes a Docker image from your local repository.
-
-13. **Inspect a container:**
-    ```bash
-    docker inspect <container_id>
-    ```
-    This command provides detailed information about a container.
-
-14. **Execute a command in a running container:**
-    ```bash
-    docker exec -it <container_id> <command>
-    ```
-    This command executes a command inside a running container.
-
-15. **View logs of a container:**
-    ```bash
-    docker logs <container_id>
-    ```
-    This command displays the logs of a specific container.
+    Example:
+    
 
 These are some of the most commonly used Docker commands. We can use them to manage Docker containers, images, volumes, networks, and other resources on your system.
