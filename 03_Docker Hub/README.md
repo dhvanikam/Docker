@@ -47,67 +47,73 @@ To access Docker through the command line interface (CLI), you need to use the `
    ```
    This command downloads a Docker image from Docker Hub.
 
-4. **List Docker images:**
+   Example :
+    ```bash
+   docker pull selenium/standalone-chrome
+   ```
+
+5. **List Docker images:**
    ```bash
    docker images
    ```
    This command lists all Docker images stored locally on your system.
 
-5. **Run a container:**
+6. **Run a container:**
    ```bash
    docker run <image_name>
    ```
-   This command creates and starts a new container from a specified image.
+    
+   This command creates and starts a new container from a specified image.We will see more in details in next topic.
 
-6. **List running containers:**
+8. **List running containers:**
    ```bash
    docker ps
    ```
    This command lists all currently running Docker containers.
 
-7. **List all containers (including stopped ones):**
+9. **List all containers (including stopped ones):**
    ```bash
    docker ps -a
    ```
    This command lists all Docker containers, including those that are stopped.
 
-8. **Stop a container:**
+10. **Stop a container:**
    ```bash
    docker stop <container_id>
    ```
    This command stops a running container.
 
-9. **Start a stopped container:**
+11. **Start a stopped container:**
    ```bash
    docker start <container_id>
    ```
    This command starts a stopped container.
 
-10. **Remove a container:**
+11. **Remove a container:**
     ```bash
     docker rm <container_id>
     ```
     This command removes a stopped container.
 
-11. **Remove an image:**
+12. **Remove an image:**
     ```bash
     docker rmi <image_id>
     ```
     This command removes a Docker image from your local repository.
 
-12. **Inspect a container:**
+13. **Inspect a container:**
     ```bash
     docker inspect <container_id>
     ```
     This command provides detailed information about a container.
 
-13. **Execute a command in a running container:**
+14. **Execute a command in a running container:**
     ```bash
     docker exec -it <container_id> <command>
     ```
     This command executes a command inside a running container.
 
-14. **View logs of a container:**
+15. **View logs of a container:**
     ```bash
     docker logs <container_id>
     ```
