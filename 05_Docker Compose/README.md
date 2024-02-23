@@ -37,9 +37,9 @@ docker-compose-v2.yml : https://github.com/SeleniumHQ/docker-selenium/blob/trunk
 
 Version 3
 docker-compose-v3.yml : https://github.com/SeleniumHQ/docker-selenium/blob/trunk/docker-compose-v3.yml
-For Windows and Linux no need to change any image names in yml file.
+* For Windows and Linux no need to change any image names in yml file.
 
-For my system macOS ARM64, i have to use specific hub and node images so need to update,
+* For my system macOS ARM64, i have to use specific hub and node images so need to update,
 ```yml
 # To execute this docker-compose yml file use `docker-compose -f docker-compose-v3.yml up
 # Add the `-d` flag at the end for detached execution
