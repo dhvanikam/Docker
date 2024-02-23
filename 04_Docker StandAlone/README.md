@@ -16,7 +16,7 @@ We are going to focus mainly on Docker-Compose, But before that lets see how to 
 
 ## Start the Containers in Standalone mode 
 
-### Find the correct images and docker run command from Docker Hub.
+### Step 1: Find the correct images and docker run command from Docker Hub.
 Lets check that image that we want to start container for is availble in Docker hub, Go to : https://hub.docker.com and Search "Selenium"
 
 #### For Windows and Linux:
@@ -50,12 +50,12 @@ More details on : https://github.com/seleniumhq-community/docker-seleniarm
 Now we know the images Lets get Started,
 
 
-**Step 2**: Make sure Docker Engine is Running,
+### Step 2: Make sure Docker Engine is Running,
 
 <img width="1277" alt="DockerDesktop" src="https://github.com/dhvanikam/Docker/assets/73573915/328b110a-8d41-455b-9343-7d595c418251">
 
 
-**Step 3**: Open Terminal to run commands to start containers
+### Step 3: Open Terminal to run commands to start containers
 
 Start Chrome standalone:
 
@@ -91,16 +91,16 @@ docker run --rm -it -p 4445:4444 -p 5901:5900 -p 7901:7900 --shm-size 2g selenia
 
 
 
-**Step 3**: Check Docker Desktop for running chrome and firefox containers in standalone mode.
+### Step 4: Check Docker Desktop for running chrome and firefox containers in standalone mode.
 
 <img width="1747" alt="Step7" src="https://github.com/dhvanikam/Docker/assets/73573915/56c4dcef-8b18-4335-9eec-10f927fe6eb3">
 
-**Step 4**: Navigate to URLs http://localhost:4444 & http://localhost:4445
+### Step 5: Navigate to URLs http://localhost:4444 & http://localhost:4445
 
 <img width="2240" alt="Step8" src="https://github.com/dhvanikam/Docker/assets/73573915/4e98d896-cb5e-4d69-a890-c46b7aab1988">
 
 
-## Update your selenium tests to point to the respective urls:
+### Step 6: Update your selenium tests to point to the respective urls:
 **DriverFactory.java**
 
 ```java
