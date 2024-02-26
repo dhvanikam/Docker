@@ -4,7 +4,7 @@ Docker Hub is a cloud-based registry service provided by Docker that allows you 
 
 You can create a free Docker account with your email address or by signing up with your Google or GitHub account. Once you've created your account with a unique Docker ID, you can access all Docker products, including Docker Hub. 
 
-https://docs.docker.com/docker-id/
+https://docs.docker.com/docker-id
 
 
 Here are some key features and aspects of Docker Hub:
