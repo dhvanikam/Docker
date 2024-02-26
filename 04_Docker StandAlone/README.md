@@ -169,4 +169,4 @@ So that was it for stand alone mode.
   * Using different machines/VMs 
  
 
-We can overcome this issue with Docker Compose. 
+We can overcome this issue with Docker Compose.
