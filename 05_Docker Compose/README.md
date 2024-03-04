@@ -32,10 +32,10 @@ OR Go to https://docs.docker.com/compose/install/
 * Lastly, run docker compose up and Compose will start and run your entire app.
 * After tests are done, To stop the Grid and cleanup the created containers, run docker-compose down.
 
-Version 2
+Version 2 [Older version]
 docker-compose-v2.yml : https://github.com/SeleniumHQ/docker-selenium/blob/trunk/docker-compose-v2.yml
 
-Version 3
+Version 3 [Latest version that we will be using]
 docker-compose-v3.yml : https://github.com/SeleniumHQ/docker-selenium/blob/trunk/docker-compose-v3.yml
 * For Windows and Linux no need to change any image names in yml file.
 
